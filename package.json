@@ -1,0 +1,18 @@
+{
+  "name": "customtheme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "sass/custom.scss",
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/custom.scss css/custom.css",
+    "css-watch": "npm run css-build -- --watch",
+    "start": "npm run css-watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "node-sass": "^4.12.0"
+  }
+}

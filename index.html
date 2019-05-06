@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $(".navbar-burger").click(function () {
+                $(".navbar-burger").toggleClass("is-active");
+                $(".navbar-menu").toggleClass("is-active");
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="columns">
+
+        <div class="column">
+
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="https://bulma.io">
+                        <h1 class="title is-2">Iconn</h1>
+                    </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                        data-target="navbarMenu">
+                        <i class="material-icons"
+                            style="margin:0.3rem;font-size:42px;text-align:center;">keyboard_arrow_down</i>
+                    </a>
+                </div>
+
+                <div id="navbarMenu" class="navbar-menu">
+                    <div class="navbar-end">
+                        <a class="navbar-item">Home</a>
+                        <a class="navbar-item">Product</a>
+                        <a class="navbar-item">Pricing</a>
+                        <a class="navbar-item">Templates</a>
+                        <a class="navbar-item">Contact</a>
+                        <a class="navbar-item">FAQ</a>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container" style="text-align: center">
+                <h2 class="title light is-inline">
+                    Login
+                </h2>
+
+
+
+                <h2 class="title dark is-inline">
+                    Sign up
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-centered is-mobile">
+                <div class="column is-half-desktop is-one-third-widescreen is-half-fullhd">
+                    <form class="box" style="background-color: #efefef;">
+                        <div class="columns">
+                            <div class="column">
+                                <center><strong>Sign up with <span class="has-text-fb-blue">Facebook</span> or
+                                        <span class="has-text-g-red">Google</span></strong></center>
+                            </div>
+                        </div>
+                        <div class="columns">
+                            <div class="column">
+                                <center>
+                                    <h2 class="background-line subtitle is-4"><span>or</span></h2>
+                                </center>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input is-large" type="email" placeholder="Email address"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                                    title="Must be valid email address">
+                                <span class="icon is-small is-left">
+                                    <i class="material-icons">email</i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input is-large" type="text" placeholder="Full username"
+                                    pattern="^[A-Za-z0-9_]{1,15}$" title="Username is limited to 15 characters">
+                                <span class="icon is-small is-left">
+                                    <i class="material-icons">person</i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input is-large" type="text" placeholder="Company name">
+                                <span class="icon is-small is-left">
+                                    <i class="material-icons">domain</i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input is-large" type="password" placeholder="Password"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                                <span class="icon is-small is-left">
+                                    <i class="material-icons">security</i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control">
+                                <input style="background-color: #ff7376;color:#fff;justify-content: center;"
+                                    type="submit" class="button is-large is-fullwidth" value="Sign up" />
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

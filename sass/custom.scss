@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+// Import Fonts
+
+// Brand Colors
+$primary: #F4F4F4;
+$secondary: #EBEBEB;
+$text: #2C2C2C;
+
+// Extra Colors
+$fb-blue: #3b5998; // facebook link blue color
+$g-red: #db3236; // google link red color
+
+$custom_colors: ("fb-blue" :$fb-blue, "g-red":$g-red); // add to customised colors
+
+// Global Variables
+$family-sans-serif: "San Francisco",
+sans-serif; // change global font family
+$body-background-color: #f4f4f4; //change global body tag background color
+$widescreen-enabled: true;
+$fullhd-enabled: true;
+
+// Form Element
+$input-radius: 8px; // change input border rounded 
+$input-background-color: #fff; // change input background color
+
+$input-placeholder-color: #000; // change input placeholder text color [custom]
+$input-placeholder-font-size: 16px; // change input placeholder font size [custom]
+$input-placeholder-font-family: 'SF Pro Display Thin',
+sans; // change input placeholder font family [custom]
+
+$field-margin-bottom: 2.25rem; // change space between input tag's [custom]
+
+//Navbar Component
+$navbar-burger-left-margin: inherit; // remove navbar menu burger [custom]
+$navbar-background-color: #ebebeb; // change navbar background
+$navbar-item-color: #2C2C2C; // change navbar-item text color
+$navbar-item-hover-color: inherit; // change navbar-item hover color
+
+// Import all bulma partials
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
+
+
+//Card Component
+$card-shadow: 0 19px 38px rgba(0, 0, 0, 0.13),
+0 0 0 1px rgba($black, 0.1); // change card background shadow
+$card-border-radius: 16px; // change card border radius [custom] 
+
+// Misc
+
+// Text Input
+input:hover {
+    box-shadow: 0px 2px 4px 0px #f8f8f8;
+}
+
+// Customised Title (Light & Dark)
+.title {
+    font-family: 'Neue Helvetica', sans;
+    font-weight: 400;
+    font-size: 7.5vw;
+    text-align: left;
+
+    &.light {
+        color: #d2d2d2;
+    }
+
+    &.dark {
+        color: #b0b0b0;
+    }
+}
+
+
+// Background line with text in middle
+.background-line {
+    position: relative;
+    z-index: 1;
+
+    &:before {
+        border-top: 2px solid #dfdfdf;
+        content: "";
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 95%;
+        z-index: -1;
+    }
+
+    span {
+        background: #efefef;
+        padding: 0 15px;
+    }
+}
+
+
+//Navbar
